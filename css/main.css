@@ -67,6 +67,11 @@ a, .media-wrap-link, button, input[type="text"], input[type="submit"] {
 
 .cta-no-border {
   border: none !important;
+  box-shadow: none !important;
+}
+
+.cta-no-border:hover {
+  box-shadow: none !important;
 }
 
 body form input[type="submit"] {

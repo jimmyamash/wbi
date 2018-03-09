@@ -20,6 +20,10 @@ $cta-radius: 3px;
 }
 .cta-no-border {
     border: none !important;
+    box-shadow: none !important;
+    &:hover {
+        box-shadow: none !important;
+    }
 }
 body form input[type="submit"] {
     width: 300px !important;
