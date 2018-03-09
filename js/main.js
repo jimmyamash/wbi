@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(".row:not(.row-header):not(.row-main-atf)").appear(function(){
+        $(this).addClass("animate");
+    },{accX: 50, accY: -300});
     $("input:not([type='submit'])").on("blur", function(){
         var trim = $(this).val().trim();
         $(this).val(trim);

@@ -192,6 +192,7 @@ body {
 }
 .social-wrap,
 .footer-links {
+    z-index: 2;
     position: absolute;
     width: 100%;
     bottom: 40px;
