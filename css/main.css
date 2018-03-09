@@ -401,6 +401,10 @@ body.no-flow {
   left: 0;
 }
 
+.social-wrap a {
+  color: #f0f0f0;
+}
+
 .coming-soon {
   width: 100%;
   max-width: 300px;
