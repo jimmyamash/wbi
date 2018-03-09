@@ -1,0 +1,111 @@
+$cta-radius: 3px;
+
+.cta {
+    @include border-radius($cta-radius);
+    padding: 15px 10px;
+    border: none;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.cta-secondary {
+    @include border-radius($cta-radius);
+    padding: 15px 10px;
+    border: none;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.cta-no-border {
+    border: none !important;
+}
+body form input[type="submit"] {
+    width: 300px !important;
+}
+input[disabled] {
+    background: gray !important;
+    border: 2px solid gray !important;
+    color: silver !important;
+    cursor: not-allowed !important;
+}
+input,
+input:focus,
+input:active,
+input:hover {
+    outline: 0;
+    border: 2px solid $color-white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+button:hover,
+button:focus,
+button:active,
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+body {
+    .shadow {
+        transition: $transition;
+        @include box-shadow(0,5px,8px, $color-shadow-none);
+        &:hover {
+            @include box-shadow(0,5px,8px, $color-shadow);
+        }
+    }
+    .row-main .cta {
+        border: 2px solid $color-white;
+        background: $color-white;
+        color: $color-primary;
+        @extend .shadow;
+    }
+    .row-main .cta-secondary {
+        border: 2px solid $color-white;
+        background: transparent;
+        color: $color-white;
+        @extend .shadow;
+    }
+    .row-alt .cta {
+        border: 2px solid $color-primary;
+        background: $color-primary;
+        color: $color-white;
+    }
+    .row-alt .cta-secondary {
+        border: 2px solid $color-primary;
+        background: transparent;
+        color: $color-primary;
+    }
+    &.faq-page {
+        .row-main .cta {
+            border: 2px solid $color-white;
+            background: $color-white;
+            color: $color-secondary;
+        }
+        .row-main .cta-secondary {
+            border: 2px solid $color-white;
+            background: transparent;
+            color: $color-white;
+        }
+        .row-alt .cta {
+            border: 2px solid $color-primary;
+            background: $color-secondary;
+            color: $color-white;
+        }
+        .row-alt .cta-secondary {
+            border: 2px solid $color-secondary;
+            background: transparent;
+            color: $color-secondary;
+        }
+    }
+}
