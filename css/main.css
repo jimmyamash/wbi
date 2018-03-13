@@ -551,7 +551,7 @@ body.no-flow {
 
 @media (max-width: 991px) {
   body .atf-coins {
-    width: 120px;
+    width: 100px;
   }
   body .item-wrap {
     margin-top: 40px;
