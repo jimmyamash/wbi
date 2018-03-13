@@ -84,6 +84,33 @@ body {
         color: $color-primary;
         position: relative;
     }
+    .faq-question {
+        position: relative;
+        padding-right: 40px;
+    }
+    .faq-question .faq-expand {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        padding: 5px;
+        margin: auto;
+        margin-top: -18px;
+        cursor: pointer;
+        transform-origin: center;
+        @include transition($transition);
+    }
+    .faq-answer {
+        max-height: 0;
+        @include transition($transition);
+        overflow: hidden;
+    }
+    .faq-question.active .faq-expand {
+        @include transform(rotate(180deg));
+    }
+    .faq-question.active + .faq-answer {
+        max-height: 1000px;
+    }
     .atf-image {
         margin-left: 0;
         width: 100px;
@@ -317,7 +344,14 @@ body {
 }
 
 // animations
-
+@include keyframes(fadein) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @include keyframes(fadeinup) {
     0% {
         @include transform(translateY(20px));
@@ -365,6 +399,9 @@ iframe {
     iframe {
         @include animation(.3s, fadeinup);
     }
+    .faq-expand {
+        @include animation(.3s, fadein);
+    }
     h1 {
         @include animation-delay(.1s);
     }
@@ -391,7 +428,8 @@ iframe {
     .video-thumb,
     .item-group,
     .g-recaptcha,
-    iframe {
+    iframe,
+    .faq-expand {
         @include animation-delay(.3s);
     }
     img {

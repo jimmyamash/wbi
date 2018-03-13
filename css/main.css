@@ -274,6 +274,44 @@ body .row-alt {
   position: relative;
 }
 
+body .faq-question {
+  position: relative;
+  padding-right: 40px;
+}
+
+body .faq-question .faq-expand {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  padding: 5px;
+  margin: auto;
+  margin-top: -18px;
+  cursor: pointer;
+  transform-origin: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .faq-answer {
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+body .faq-question.active .faq-expand {
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+body .faq-question.active + .faq-answer {
+  max-height: 1000px;
+}
+
 body .atf-image {
   margin-left: 0;
   width: 100px;
@@ -529,6 +567,33 @@ body.no-flow {
   }
 }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes fadeinup {
   0% {
     -moz-transform: translateY(20px);
@@ -632,6 +697,18 @@ iframe {
   animation-fill-mode: forwards;
 }
 
+.animate .faq-expand {
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-name: fadein;
+  -moz-animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+}
+
 .animate h1 {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
@@ -676,7 +753,8 @@ iframe {
 .animate .video-thumb,
 .animate .item-group,
 .animate .g-recaptcha,
-.animate iframe {
+.animate iframe,
+.animate .faq-expand {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
