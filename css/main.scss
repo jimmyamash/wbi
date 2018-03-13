@@ -9,7 +9,15 @@
 }
 
 // core
-
+.preloader {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1000;
+}
 body {
     font-size: 12px;
     font-family: $font-primary;
