@@ -25,7 +25,7 @@
 
         <!--overlay-->
         <div class="animate text-center success-overlay success-content">
-            <i class="fas fa-times fa-2x overlay-close overlay-close-faq"></i>
+            <i class="fas fa-times overlay-close overlay-close-faq"></i>
             <div class="container-fluid">
                 <div class="d-block row row-height row-main">
                     <div class="col-md-12 headlines">
@@ -33,8 +33,8 @@
                         <h4>Stay tuned for updates.</h4>
                     </div>
                     <div class="col-md-12">
-                        <a target="_blank" href="" class="cta cta-main"><i class="fab fa-twitter"></i>Tweet</a>
-                        <a target="_blank" href="" class="cta cta-main"><i class="fab fa-facebook"></i>Share</a>
+                        <a target="_blank" href="" class="cta cta-main"><i class="fab fa-twitter fa-2x"></i>Tweet</a>
+                        <a target="_blank" href="" class="cta cta-main"><i class="fab fa-facebook fa-2x"></i>Share</a>
                         <a href="" class="cta cta-main"><i class="fas fa-envelope"></i>Email</a>
                     </div>
                 </div>
@@ -42,22 +42,34 @@
         </div>
         <!--header-->
         <div class="container-fluid">
-            <div class="row row-main row-header">
+            <div class="row row-main row-header animate">
                 <div class="col-sm-6 col-xs-6 col-md-2">
-                    <i class="fa fa-circle fa-4x"></i>
+                    <i class="fa fa-circle fa-2x"></i>
                     <!-- <img class="logo" src="img/logo-new.png" /> -->
                 </div>
                 <div class="col-sm-6 col-xs-6 col-md-10 content-group content-ctas header-ctas mobile-hide">
                     <div class="desktop-inline-only">
-                        <a class="cta join-wbi">Join The Whitelist</a>
-                        <a class="cta cta-secondary signup-button-link">FAQs + Contact</a>
-                        <a href="//medium.com" target="_blank" class="cta cta-secondary cta-no-border">Blog</a>
+                        <!-- <a class="cta join-wbi">Join The Whitelist</a> -->
+                        <div class="row">
+                            <div class="social-links">
+                                <div class="col-md-1 col-md-offset-3 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                                <div class="col-md-1 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                                <div class="col-md-1 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                                <div class="col-md-1 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-telegram"></i></a></div>
+                                <div class="col-md-1 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-discord"></i></a></div>
+                                <div class="col-md-1 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-medium"></i></a></div>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="cta cta-secondary cta-small signup-button-link">FAQs + Contact</a>
+                            </div>
+                        </div>
+                        <!-- <a href="//medium.com" target="_blank" class="cta cta-secondary cta-no-border">Blog</a> -->
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-md-10 faq-group faq-ctas header-ctas mobile-hide">
                     <div class="desktop-inline-only">
                         <a class="cta join-wbi">Contact Us</a>
-                        <a class="cta cta-secondary signup-button-link">< Go Back</a>
+                        <a class="cta cta-secondary signup-button-link">&lt; Go Back</a>
                     </div>
                 </div>
             </div>
@@ -66,12 +78,29 @@
         <div class="container-fluid">
             <!--atf-->
             <div class="row row-height row-main row-main-first row-main-atf row-main-bottom">
-                <div class="col-md-12 headlines content-group">
+                <div class="col-md-8 headlines content-group">
                     <h1>The future of cryptocurrency starts here.</h1>
                     <h2>WBI provides the only end-to-end cryptocurrency experience.</h2>
-                    <a class="cta join-wbi">Join The Whitelist</a>
+                    <a class="cta cta-main desktop-only">Download Whitepaper</a>
                     <a class="desktop-only cta cta-secondary learn-more">Learn More</a>
                     <a class="mobile-only cta cta-secondary signup-button-link">FAQs + Contact</a>
+                </div>
+                <div class="col-md-4 headlines sm-margin content-group">
+                    <div class="col-md-12">
+                        <img src="img/arrow.png" class="atf-image" />
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h3>Join The Whitelist.</h3>
+                        <!-- <h4>The world is waiting for you.</h4> -->
+                    </div>
+                    <div class="col-md-12 block-inputs">
+                        <form accept-charset="UTF-8" action="https://usebasin.com/f/e7ca2a7c42a8" method="POST">
+                            <input required type="text" name="email" placeholder="Email Address" />
+                            <!-- <input required id="searchTextFieldcontent" type="text" name="location" placeholder="Your Location" /> -->
+                            <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
+                            <input class="cta cta-main" type="submit" value="Submit" />
+                        </form>
+                    </div>
                 </div>
                 <div class="col-md-12 headlines faq-group">
                     <h1>Frequently Asked Questions.</h1>
@@ -208,6 +237,7 @@
                         </div>
                         <h5>John Doe</h5>
                         <h5>Founder/CEO</h5>
+                        <p>Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -217,6 +247,7 @@
                         </div>
                         <h5>John Doe</h5>
                         <h5>Founder/CEO</h5>
+                        <p>Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -226,6 +257,7 @@
                         </div>
                         <h5>John Doe</h5>
                         <h5>Founder/CEO</h5>
+                        <p>Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. </p>
                     </div>
                 </div>
                 <div class="col-md-12 item-wrap">
@@ -238,6 +270,7 @@
                         </div>
                         <h5>John Doe</h5>
                         <h5>Founder/CEO</h5>
+                        <p>Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -247,6 +280,7 @@
                         </div>
                         <h5>John Doe</h5>
                         <h5>Founder/CEO</h5>
+                        <p>Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -256,57 +290,68 @@
                         </div>
                         <h5>John Doe</h5>
                         <h5>Founder/CEO</h5>
+                        <p>Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. Here is the description of a team member. </p>
                     </div>
                 </div>
             </div>
             <div id="Join" class="row row-height row-footer row-main text-center">
-                <div class="footer-links">
+                <div class="content-group headlines sm-margin">
                     <div class="col-md-12">
-                        <a href=""><span class="footer-link">Blog | </span></a>
-                        <a href=""><span class="footer-link">Terms | </span></a>
-                        <a href=""><span class="footer-link">Privacy</span></a>
+                        <h3>Join The Whitelist.</h3>
+                        <h4>The world is waiting for you.</h4>
+                    </div>
+                    <div class="col-md-12 block-inputs">
+                        <form accept-charset="UTF-8" action="https://usebasin.com/f/e7ca2a7c42a8" method="POST">
+                            <input required type="text" name="email" placeholder="Email Address" />
+                            <!-- <input required id="searchTextFieldcontent" type="text" name="location" placeholder="Your Location" /> -->
+                            <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
+                            <input class="cta cta-main" type="submit" value="Submit" />
+                        </form>
                     </div>
                 </div>
-                <div class="social-wrap">
-                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></div>
-                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
-                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></div>
-                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="" target="_blank"><i class="fab fa-telegram fa-2x"></i></a></div>
+                <div class="faq-group headlines sm-margin">
+                    <div class="col-md-12">
+                        <h3>Contact Us.</h3>
+                        <h4>Send us a message.</h4>
+                    </div>
+                    <div class="col-md-12 block-inputs">
+                        <form accept-charset="UTF-8" action="https://usebasin.com/f/35742ab7aebe" method="POST">
+                            <input required id="searchTextFieldFAQ" type="text" name="business location" placeholder="Business Name" />
+                            <input required type="text" name="name" placeholder="Your Name" />
+                            <input required type="text" name="email" placeholder="Email Address" />
+                            <input required id="FAQPhone" type="text" name="phone" placeholder="Phone Number" />
+                            <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
+                            <input class="cta cta-main" type="submit" value="Submit" />
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="content-group">
-                            <div class="col-md-12 headlines">
-                                <h3>Join The Whitelist.</h3>
-                                <h4>The world is waiting for you.</h4>
-                            </div>
-                            <div class="col-md-12 block-inputs">
-                                <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-                                <form accept-charset="UTF-8" action="https://usebasin.com/f/e7ca2a7c42a8" method="POST">
-                                    <input required type="text" name="email" placeholder="Email Address" />
-                                    <input required id="searchTextFieldcontent" type="text" name="location" placeholder="Your Location" />
-                                    <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
-                                    <input class="cta cta-main" type="submit" value="Submit" />
-                                </form>
-                            </div>
+                <div class="col-md-4">
+                    <div class="row social-links headlines">
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-telegram fa-2x"></i></a></div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-discord fa-2x"></i></a></div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-medium fa-2x"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row footer-links">
+                        <div class="col-md-4 col-sm-4 col-xs-4 headlines">
+                            <a href=""><span class="footer-link">Blog</span></a>
                         </div>
-                        <div class="faq-group">
-                            <div class="col-md-12 headlines">
-                                <h3>Contact Us.</h3>
-                                <h4>Send us a message.</h4>
-                            </div>
-                            <div class="col-md-12 block-inputs">
-                                <form accept-charset="UTF-8" action="https://usebasin.com/f/35742ab7aebe" method="POST">
-                                    <input required id="searchTextFieldFAQ" type="text" name="business location" placeholder="Business Name" />
-                                    <input required type="text" name="name" placeholder="Your Name" />
-                                    <input required type="text" name="email" placeholder="Email Address" />
-                                    <input required id="FAQPhone" type="text" name="phone" placeholder="Phone Number" />
-                                    <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
-                                    <input class="cta cta-main" type="submit" value="Submit" />
-                                </form>
-                            </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 headlines">
+                            <a href=""><span class="footer-link">Terms</span></a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 headlines">
+                            <a href=""><span class="footer-link">Privacy</span></a>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-4 headlines">
+                    <!-- InstaWidget -->
+                    <a href="https://instawidget.net/v/user/privatekanye" id="link-bcecf42ecd9aa52c13187a79b71fdc22a06f7e03e7c1d79fa142fef0c3bbde77">@privatekanye</a>
+                    <script src="https://instawidget.net/js/instawidget.js?u=bcecf42ecd9aa52c13187a79b71fdc22a06f7e03e7c1d79fa142fef0c3bbde77&width=300px"></script>
                 </div>
             </div>
         </div>

@@ -47,7 +47,7 @@ a, .media-wrap-link, button, input[type="text"], input[type="submit"] {
   border-radius: 3px;
   padding: 15px 10px;
   border: none;
-  width: 200px;
+  min-width: 200px;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -59,10 +59,14 @@ a, .media-wrap-link, button, input[type="text"], input[type="submit"] {
   border-radius: 3px;
   padding: 15px 10px;
   border: none;
-  width: 200px;
+  min-width: 200px;
   position: relative;
   display: inline-block;
   text-align: center;
+}
+
+.cta-small {
+  padding: 5px;
 }
 
 .cta-no-border {
@@ -270,6 +274,10 @@ body .row-alt {
   position: relative;
 }
 
+body .atf-image {
+  margin-left: 0;
+}
+
 body .row-height {
   min-height: 100vh;
   padding-top: 150px;
@@ -280,9 +288,19 @@ body .row-footer {
   padding-bottom: 100px;
 }
 
+body .row-header .social-links a {
+  position: relative;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  margin-left: 10px;
+  float: right;
+  padding: 5px;
+}
+
 body .row-header {
   left: 0;
-  height: 100px;
+  height: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
   position: fixed;
@@ -310,6 +328,10 @@ body .headlines {
 
 body .headlines .cta {
   margin-top: 40px;
+}
+
+body .sm-margin .cta {
+  margin-top: 10px;
 }
 
 body .item-group {
@@ -408,25 +430,13 @@ body.no-flow {
   display: block !important;
 }
 
-.social-wrap,
-.footer-links {
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  bottom: 40px;
-  left: 0;
-}
-
-.footer-links {
-  bottom: 120px;
-}
-
 .footer-links a {
   color: #f0f0f0;
 }
 
-.social-wrap a {
+.social-links a {
   color: #f0f0f0;
+  margin: 10px 0;
 }
 
 .coming-soon {
@@ -589,7 +599,8 @@ button,
 img,
 .video-thumb,
 .item-group,
-.g-recaptcha {
+.g-recaptcha,
+iframe {
   opacity: 0;
 }
 
@@ -607,7 +618,8 @@ img,
 .animate img,
 .animate .video-thumb,
 .animate .item-group,
-.animate .g-recaptcha {
+.animate .g-recaptcha,
+.animate iframe {
   -webkit-animation-duration: 0.3s;
   -webkit-animation-name: fadeinup;
   -webkit-animation-fill-mode: forwards;
@@ -662,7 +674,8 @@ img,
 .animate button,
 .animate .video-thumb,
 .animate .item-group,
-.animate .g-recaptcha {
+.animate .g-recaptcha,
+.animate iframe {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;

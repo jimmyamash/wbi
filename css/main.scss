@@ -84,6 +84,9 @@ body {
         color: $color-primary;
         position: relative;
     }
+    .atf-image {
+        margin-left: 0;
+    }
     .row-height {
         min-height: 100vh;
         padding-top: 150px;
@@ -93,8 +96,21 @@ body {
         padding-bottom: 100px;
     }
     .row-header {
+        .social-links {
+            a {
+                position: relative;
+                right: 0;
+                margin: auto;
+                display: inline-block;
+                margin-left: 10px;
+                float: right;
+                padding: 5px;
+            }
+        }
+    }
+    .row-header {
         left: 0;
-        height: 100px;
+        height: 60px;
         padding-top: 20px;
         padding-bottom: 20px;
         position: fixed;
@@ -118,6 +134,9 @@ body {
     }
     .headlines .cta {
         margin-top: 40px;
+    }
+    .sm-margin .cta {
+        margin-top: 10px;
     }
     .item-group {
         padding: 20px;
@@ -190,23 +209,15 @@ body {
 .d-block {
     display: block !important;
 }
-.social-wrap,
 .footer-links {
-    z-index: 2;
-    position: absolute;
-    width: 100%;
-    bottom: 40px;
-    left: 0;
-}
-.footer-links {
-    bottom: 120px;
     a {
         color: $color-white;
     }
 }
-.social-wrap {
+.social-links {
     a {
         color: $color-white;
+        margin: 10px 0;
     }
 }
 .coming-soon {
@@ -330,7 +341,8 @@ button,
 img,
 .video-thumb,
 .item-group,
-.g-recaptcha {
+.g-recaptcha,
+iframe {
     opacity: 0;
 }
 .animate {
@@ -348,7 +360,8 @@ img,
     img,
     .video-thumb,
     .item-group,
-    .g-recaptcha {
+    .g-recaptcha,
+    iframe {
         @include animation(.3s, fadeinup);
     }
     h1 {
@@ -376,7 +389,8 @@ img,
     button,
     .video-thumb,
     .item-group,
-    .g-recaptcha {
+    .g-recaptcha,
+    iframe {
         @include animation-delay(.3s);
     }
     img {

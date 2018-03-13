@@ -4,7 +4,7 @@ $cta-radius: 3px;
     @include border-radius($cta-radius);
     padding: 15px 10px;
     border: none;
-    width: 200px;
+    min-width: 200px;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -13,10 +13,13 @@ $cta-radius: 3px;
     @include border-radius($cta-radius);
     padding: 15px 10px;
     border: none;
-    width: 200px;
+    min-width: 200px;
     position: relative;
     display: inline-block;
     text-align: center;
+}
+.cta-small {
+    padding: 5px;
 }
 .cta-no-border {
     border: none !important;
