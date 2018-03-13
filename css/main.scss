@@ -100,6 +100,34 @@ body {
     .atf-coins-2 {
         left: 0;
     }
+    .atf-question {
+        display: none;
+        position: absolute;
+    }
+    .atf-question-1 {
+        bottom: 20px;
+        left: 100px;
+    }
+    .atf-question-2 {
+        bottom: 10px;
+        left: 160px;
+    }
+    .atf-question-3 {
+        bottom: 20px;
+        right: 160px;
+    }
+    .atf-question-4 {
+        bottom: 40px;
+        left: 260px;
+    }
+    .atf-question-5 {
+        bottom: 10px;
+        right: 260px;
+    }
+    .atf-question-6 {
+        bottom: 40px;
+        right: 200px;
+    }
     .faq-question .faq-expand {
         position: absolute;
         top: 0;
@@ -202,8 +230,8 @@ body {
     }
     &.faqs {
         background: $color-secondary;
-        .atf-coins {
-            display: none;
+        .atf-question {
+            display: block;
         }
         .hidden-faqs {
             display: none;

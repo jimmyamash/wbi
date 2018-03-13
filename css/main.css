@@ -294,6 +294,41 @@ body .atf-coins-2 {
   left: 0;
 }
 
+body .atf-question {
+  display: none;
+  position: absolute;
+}
+
+body .atf-question-1 {
+  bottom: 20px;
+  left: 100px;
+}
+
+body .atf-question-2 {
+  bottom: 10px;
+  left: 160px;
+}
+
+body .atf-question-3 {
+  bottom: 20px;
+  right: 160px;
+}
+
+body .atf-question-4 {
+  bottom: 40px;
+  left: 260px;
+}
+
+body .atf-question-5 {
+  bottom: 10px;
+  right: 260px;
+}
+
+body .atf-question-6 {
+  bottom: 40px;
+  right: 200px;
+}
+
 body .faq-question .faq-expand {
   position: absolute;
   top: 0;
@@ -420,8 +455,8 @@ body.faqs {
   background: #4fb1e9;
 }
 
-body.faqs .atf-coins {
-  display: none;
+body.faqs .atf-question {
+  display: block;
 }
 
 body.faqs .hidden-faqs {

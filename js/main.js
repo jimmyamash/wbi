@@ -17,7 +17,14 @@ $(document).ready(function(){
     $(".row-header").addClass("animate");
     $(".row-main-first").addClass("animate");
 
-    $(".signup-button-link").click(function(){
+    $(".faq-button-toggle").click(function(){
+        if ($("body").hasClass("faqs")) {
+            $(".atf-coins-1").attr("src","img/coins-1.png");
+            $(".atf-coins-2").attr("src","img/coins-2.png");
+        } else {
+            $(".atf-coins-1").attr("src","img/questions-1.png");
+            $(".atf-coins-2").attr("src","img/questions-2.png");
+        }
         $('html,body').animate({ scrollTop: 0 }, 300);
         $("body").toggleClass("faqs");
         $(".row:not(.row-header):not(.row-main-atf)").removeClass("animate");
