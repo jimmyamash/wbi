@@ -420,6 +420,10 @@ body.faqs {
   background: #4fb1e9;
 }
 
+body.faqs .atf-coins {
+  display: none;
+}
+
 body.faqs .hidden-faqs {
   display: none;
 }
