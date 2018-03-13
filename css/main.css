@@ -133,7 +133,7 @@ body .shadow:hover, body .row-main .cta:hover, body .row-main .cta-secondary:hov
 body .row-main .cta {
   border: 2px solid #f0f0f0;
   background: #f0f0f0;
-  color: #646464;
+  color: #002d72;
 }
 
 body .row-main .cta-secondary {
@@ -143,39 +143,39 @@ body .row-main .cta-secondary {
 }
 
 body .row-alt .cta {
-  border: 2px solid #646464;
-  background: #646464;
+  border: 2px solid #002d72;
+  background: #002d72;
   color: #f0f0f0;
 }
 
 body .row-alt .cta-secondary {
-  border: 2px solid #646464;
+  border: 2px solid #002d72;
   background: transparent;
-  color: #646464;
+  color: #002d72;
 }
 
-body.faq-page .row-main .cta {
+body.faqs .row-main .cta {
   border: 2px solid #f0f0f0;
   background: #f0f0f0;
-  color: #969696;
+  color: #4fb1e9;
 }
 
-body.faq-page .row-main .cta-secondary {
+body.faqs .row-main .cta-secondary {
   border: 2px solid #f0f0f0;
   background: transparent;
   color: #f0f0f0;
 }
 
-body.faq-page .row-alt .cta {
-  border: 2px solid #646464;
-  background: #969696;
+body.faqs .row-alt .cta {
+  border: 2px solid #4fb1e9;
+  background: #4fb1e9;
   color: #f0f0f0;
 }
 
-body.faq-page .row-alt .cta-secondary {
-  border: 2px solid #969696;
+body.faqs .row-alt .cta-secondary {
+  border: 2px solid #4fb1e9;
   background: transparent;
-  color: #969696;
+  color: #4fb1e9;
 }
 
 * {
@@ -186,7 +186,7 @@ body {
   font-size: 12px;
   font-family: "AvenirNextLTW01";
   font-weight: 400;
-  background: #646464;
+  background: #002d72;
 }
 
 body .cta i {
@@ -243,7 +243,7 @@ body .success-overlay {
 }
 
 body .success-overlay.success-content {
-  background: rgba(100, 100, 100, 0.9);
+  background: rgba(0, 45, 114, 0.9);
 }
 
 body .overlay-close {
@@ -261,7 +261,8 @@ body .row-main {
 }
 
 body .logo {
-  width: 60px;
+  width: 100%;
+  max-width: 180px;
 }
 
 body .row-main.row-main-first {
@@ -270,13 +271,27 @@ body .row-main.row-main-first {
 
 body .row-alt {
   background: #f0f0f0;
-  color: #646464;
+  color: #002d72;
   position: relative;
 }
 
 body .faq-question {
   position: relative;
   padding-right: 40px;
+}
+
+body .atf-coins {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+}
+
+body .atf-coins-1 {
+  right: 0;
+}
+
+body .atf-coins-2 {
+  left: 0;
 }
 
 body .faq-question .faq-expand {
@@ -318,7 +333,7 @@ body .atf-image {
 }
 
 body .row-height {
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 150px;
   padding-bottom: 150px;
 }
@@ -339,12 +354,12 @@ body .row-header .social-links a {
 
 body .row-header {
   left: 0;
-  height: 60px;
+  height: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
   position: fixed;
   z-index: 100;
-  background: #646464;
+  background: #002d72;
 }
 
 body .row-header .cta {
@@ -398,11 +413,11 @@ body input[type="text"] {
   -moz-border-radius: 3px;
   border-radius: 3px;
   width: 300px;
-  color: #646464;
+  color: #002d72;
 }
 
 body.faqs {
-  background: #969696;
+  background: #4fb1e9;
 }
 
 body.faqs .hidden-faqs {
@@ -434,19 +449,19 @@ body.faqs .row-main-top:after {
 }
 
 body.faqs .row-alt {
-  color: #969696;
+  color: #4fb1e9;
 }
 
 body.faqs .row-header {
-  background: #969696;
+  background: #4fb1e9;
 }
 
 body.faqs .item-group {
-  border-color: #969696;
+  border-color: #4fb1e9;
 }
 
 body.faqs input[type="text"] {
-  color: #969696;
+  color: #4fb1e9;
 }
 
 body.no-flow {
@@ -496,6 +511,9 @@ body.no-flow {
 }
 
 @media (max-width: 991px) {
+  body .atf-coins {
+    width: 120px;
+  }
   body .item-wrap {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -519,7 +537,6 @@ body.no-flow {
     margin: auto;
     position: relative;
     display: block;
-    width: 40px;
   }
   body .cta + .cta {
     margin-left: 0 !important;

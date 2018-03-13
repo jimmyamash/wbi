@@ -93,7 +93,7 @@ body {
         background: transparent;
         color: $color-primary;
     }
-    &.faq-page {
+    &.faqs {
         .row-main .cta {
             border: 2px solid $color-white;
             background: $color-white;
@@ -105,7 +105,7 @@ body {
             color: $color-white;
         }
         .row-alt .cta {
-            border: 2px solid $color-primary;
+            border: 2px solid $color-secondary;
             background: $color-secondary;
             color: $color-white;
         }
