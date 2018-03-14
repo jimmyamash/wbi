@@ -125,9 +125,9 @@ body .shadow, body .row-main .cta, body .row-main .cta-secondary {
 }
 
 body .shadow:hover, body .row-main .cta:hover, body .row-main .cta-secondary:hover {
-  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 body .row-main .cta {
