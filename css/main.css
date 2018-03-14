@@ -599,6 +599,12 @@ body.no-flow {
 }
 
 @media (max-width: 991px) {
+  body input[type="text"] {
+    width: 100%;
+  }
+  body form input[type="submit"] {
+    width: 100% !important;
+  }
   body .atf-coins {
     width: 100px;
   }
