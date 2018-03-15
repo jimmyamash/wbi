@@ -554,7 +554,8 @@ img,
 .item-group,
 .g-recaptcha,
 iframe,
-address {
+address,
+.border-right:after {
     opacity: 0;
 }
 .animate {
@@ -577,7 +578,8 @@ address {
     address {
         @include animation(.3s, fadeinup);
     }
-    .faq-expand {
+    .faq-expand,
+    .border-right:after {
         @include animation(.3s, fadein);
     }
     h1 {
@@ -608,7 +610,8 @@ address {
     .g-recaptcha,
     iframe,
     address,
-    .faq-expand {
+    .faq-expand,
+    .border-right:after {
         @include animation-delay(.3s);
     }
     img {
