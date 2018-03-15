@@ -51,6 +51,16 @@
     right: 0;
     z-index: -1000;
 }
+.em1 {
+    font-size: 1em !important;
+}
+.anchor {
+    cursor: pointer;
+}
+a h6 {
+    color: $color-white;
+    text-decoration: none;
+}
 body {
     font-size: 12px;
     font-family: $font-primary;
@@ -76,6 +86,9 @@ body {
         margin: auto;
         object-fit: cover;
         overflow: hidden;
+    }
+    .hidden-content {
+        display: none;
     }
     .team-photo img {
         width: 100%;
@@ -114,6 +127,9 @@ body {
         color: $color-white;
         position: relative;
     }
+    .row-footer {
+        position: relative;
+    }
     .logo {
         width: 100%;
         max-width: 180px;
@@ -128,7 +144,12 @@ body {
     }
     .faq-question {
         position: relative;
-        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .faq-question-first {
+        padding-left: 0;
+        text-decoration: underline;
+        cursor: pointer;
     }
     .atf-coins {
         position: absolute;
@@ -172,7 +193,7 @@ body {
     .faq-question .faq-expand {
         position: absolute;
         top: 0;
-        right: 10px;
+        left: 10px;
         bottom: 0;
         padding: 5px;
         margin: auto;
@@ -194,12 +215,47 @@ body {
     }
     .atf-image {
         margin-left: 0;
-        width: 100px;
+        width: 120px;
+    }
+    .row-footer * {
+        color: $color-primary;
+    }
+    .row-footer {
+        background: $color-secondary;
+    }
+    .border-right:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 500px;
+        top: 300px;
+        @include transform(translateY(-50%));
+        margin: 0 auto;
+        width: 1px;
+        background: $color-primary-transparent;
+    }
+    &.faqs {
+        .row-footer * {
+            color: $color-secondary;
+        }
+        .row-footer {
+            background: $color-primary;
+        }
+        .border-right:after {
+            background: $color-secondary-transparent;
+        }
     }
     .row-height {
         min-height: 90vh;
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+    .row-height-sm {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .row-height-no-min {
+        min-height: 0;
     }
     .row-footer {
         padding-bottom: 100px;
@@ -277,6 +333,9 @@ body {
         .hidden-faqs {
             display: none;
         }
+        .hidden-content {
+            display: block;
+        }
         .faq-group {
             display: block !important;
         }
@@ -300,6 +359,15 @@ body {
         }
         input[type="text"] {
             color: $color-secondary;
+        }
+        .row-strip {
+            input[type="text"],
+            input[type="submit"] {
+                display: inline-block;
+                margin-top: 10px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
         }
     }
     &.no-flow {
@@ -346,11 +414,17 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.margin-top-0 {
+    margin-top: 0;
+}
 
 // responsive
 
 @media (max-width: 991px) {
     body {
+        border-right:after {
+            display: none;
+        }
         input[type="text"] {
             width: 100%;
         }
@@ -393,8 +467,12 @@ body {
         }
         .row-height {
             min-height: 70vh;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+        .row-height-sm.row {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
         }
         .row-footer {
             padding-bottom: 100px !important;
@@ -416,6 +494,12 @@ body {
     }
 }
 @media (min-width: 992px) {
+    .row-strip {
+        input[type="text"],
+        input[type="submit"] {
+            margin-left: 5px;
+        }
+    }
     .row-height:not(.row-header) {
         // display: flex;
         // align-items: center;
@@ -469,7 +553,8 @@ img,
 .video-thumb,
 .item-group,
 .g-recaptcha,
-iframe {
+iframe,
+address {
     opacity: 0;
 }
 .animate {
@@ -488,7 +573,8 @@ iframe {
     .video-thumb,
     .item-group,
     .g-recaptcha,
-    iframe {
+    iframe,
+    address {
         @include animation(.3s, fadeinup);
     }
     .faq-expand {
@@ -521,6 +607,7 @@ iframe {
     .item-group,
     .g-recaptcha,
     iframe,
+    address,
     .faq-expand {
         @include animation-delay(.3s);
     }

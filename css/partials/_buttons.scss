@@ -83,6 +83,18 @@ body {
         color: $color-white;
         @extend .shadow;
     }
+    .row-main .cta-accent {
+        border: 2px solid $color-tertiary;
+        background: $color-tertiary;
+        color: $color-primary;
+        @extend .shadow;
+    }
+    .row-alt .cta-accent {
+        border: 2px solid $color-tertiary;
+        background: $color-tertiary;
+        color: $color-primary;
+        @extend .shadow;
+    }
     .row-alt .cta {
         border: 2px solid $color-primary;
         background: $color-primary;
@@ -114,5 +126,17 @@ body {
             background: transparent;
             color: $color-secondary;
         }
+        .row-main .cta-accent {
+            border: 2px solid $color-tertiary;
+            background: $color-tertiary;
+            color: $color-primary;
+            @extend .shadow;
+        }
+        .row-alt .cta-accent {
+            border: 2px solid $color-tertiary;
+            background: $color-tertiary;
+            color: $color-primary;
+            @extend .shadow;
+        }        
     }
 }

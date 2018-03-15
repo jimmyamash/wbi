@@ -79,7 +79,7 @@
             <img class="preloader" src="img/questions-1.png" />
             <img class="preloader" src="img/questions-2.png" />
             <!--atf-->
-            <div class="row row-height row-main row-main-first row-main-atf row-main-bottom">
+            <div id="Atf" class="row row-height row-main row-main-first row-main-atf row-main-bottom">
                 <div class="content-group">
                     <img class="atf-coins atf-coins-1" src="img/coins-1.png" />
                     <img class="atf-coins atf-coins-2" src="img/coins-2.png" />
@@ -89,7 +89,7 @@
                     <img class="atf-coins atf-coins-2" src="img/coins-2.png" />
                 </div>
                 <div class="col-md-8 headlines content-group">
-                    <h1>The future of cryptocurrency starts here.</h1>
+                    <h1 class="margin-top-0">The future of cryptocurrency starts here.</h1>
                     <h2>The World Blockchain Initiative provides the only end-to-end cryptocurrency experience.</h2>
                     <a class="cta cta-main desktop-only">Download Whitepaper</a>
                     <a class="desktop-only cta cta-secondary learn-more">Learn More</a>
@@ -109,7 +109,7 @@
                                 <input required type="text" name="email" placeholder="Email Address" />
                                 <!-- <input required id="searchTextFieldcontent" type="text" name="location" placeholder="Your Location" /> -->
                                 <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
-                                <input class="cta cta-main" type="submit" value="Submit" />
+                                <input class="cta cta-main cta-accent" type="submit" value="Submit" />
                             </form>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                 <div class="content-group">
                     <div class="col-md-12 headlines">
                         <h3>About WBI Token.</h3>
-                        <h4>Read about our history.</h4>
+                        <!-- <h4>Read about our history.</h4> -->
                     </div>
                     <div class="col-md-12">
                             <div class="item-wrap">
@@ -168,6 +168,11 @@
                         <h4>Here are some of our most frequently asked questions.</h4>
                     </div>
                     <div class="col-md-12">
+                        <div class="headlines text-left">
+                            <h5 class="faq-question faq-question-first faq-expand-all">Expand All</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
                         <div class="headlines">
                             <h5 class="faq-question">Question<i class="faq-expand fa fa-2x fa-angle-down"></i></h5>
                             <p class="faq-answer">Here is the answer to this question. Here is the answer to this question. Here is the answer to this question. Here is the answer to this question.</p>
@@ -206,7 +211,7 @@
                 </div>
             </div>
             <!--roadmap-->
-            <div class="hidden-faqs row row-height row-main row-main-top text-center">
+            <div id="Roadmap" class="hidden-faqs row row-height row-main row-main-top text-center">
                 <div class="col-md-12 content-group">
                     <div class="headlines">
                         <h3>Our Roadmap.</h3>
@@ -258,7 +263,22 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden-faqs row row-height row-alt text-center">
+            <!--faq join strip-->
+            <div id="FaqJoin" class="hidden-content row-strip row row-main row-footer row-height-sm text-center">
+                <div class="col-md-4">
+                    <h3>Join The Whitelist.</h3>
+                </div>
+                <div class="col-md-8">
+                    <form accept-charset="UTF-8" action="https://usebasin.com/f/e7ca2a7c42a8" method="POST">
+                        <input required="" type="text" name="email" placeholder="Email Address">
+                        <!-- <input required id="searchTextFieldcontent" type="text" name="location" placeholder="Your Location" /> -->
+                        <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
+                        <input class="cta cta-main cta-accent" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <!--team-->
+            <div id="Team" class="hidden-faqs row row-height row-alt text-center">
                 <div class="col-md-12 headlines">
                     <h3>Our Team & Advisors</h3>
                 </div>
@@ -329,9 +349,8 @@
                     </div>
                 </div>
             </div>
-            <div id="Join" class="row row-height row-footer row-main text-center">
-                <img class="atf-coins atf-coins-1" src="img/coins-1.png" />
-                <img class="atf-coins atf-coins-2" src="img/coins-2.png" />
+            <!--join-->
+            <div id="Join" class="row row-height row-height-no-min row-main text-center">
                 <div class="content-group headlines sm-margin">
                     <div class="col-md-12">
                         <div class="row">
@@ -355,7 +374,7 @@
                                     <input required type="text" name="email" placeholder="Email Address" />
                                     <!-- <input required id="searchTextFieldcontent" type="text" name="location" placeholder="Your Location" /> -->
                                     <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
-                                    <input class="cta cta-main" type="submit" value="Submit" />
+                                    <input class="cta cta-main cta-accent" type="submit" value="Submit" />
                                 </form>
                             </div>
                         </div>
@@ -380,11 +399,20 @@
                             <input required type="text" name="email" placeholder="Email Address" />
                             <input required id="FAQPhone" type="text" name="phone" placeholder="Phone Number" />
                             <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
-                            <input class="cta cta-main" type="submit" value="Submit" />
+                            <input class="cta cta-main cta-accent" type="submit" value="Submit" />
                         </form>
                     </div>
                 </div>
-                <div class="col-md-4">
+            </div>
+            <div id="Footer" class="row row-footer text-center">
+                <img class="atf-coins atf-coins-1" src="img/coins-1.png" />
+                <img class="atf-coins atf-coins-2" src="img/coins-2.png" />
+                <div class="border-right col-md-4 text-left">
+                    <div class="row headlines">
+                        <div class="col-md-12">
+                            <h6>Keep up to date.</h6>
+                        </div>
+                    </div>
                     <div class="row social-links headlines">
                         <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></div>
                         <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
@@ -393,10 +421,37 @@
                         <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-discord fa-2x"></i></a></div>
                         <div class="col-md-2 col-sm-2 col-xs-2"><a href="" target="_blank"><i class="fab fa-medium fa-2x"></i></a></div>
                     </div>
+                    <div class="row headlines">
+                        <div class="col-md-12">
+                            <a class="em1" href="mailto:hello@wbitoken.com"><h6>hello@wbitoken.com</h6></a>
+                        </div>
+                    </div>
+                    <div class="row headlines">
+                        <div class="col-md-12">
+                            <address class="em1"><h6>
+                                5865 Neal Ave N<br />
+                                Ste 175<br />
+                                Stillwater, MN 55082<br /></h6>
+                            </address>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="row footer-links">
-                        <div class="col-md-4 col-sm-4 col-xs-4 headlines">
+                <div class="border-right col-md-4">
+                    <div class="row footer-links headlines text-left">
+                        <div class="col-md-12">
+                            <h6 id="AnchorAbout" class="anchor">About WBI Token</a>
+                        </div>
+                        <div class="col-md-12">
+                            <h6 id="AnchorRoadmap" class="anchor">Roadmap</a>
+                        </div>
+                        <div class="col-md-12">
+                            <h6 id="AnchorTeam" class="anchor">Team & Advisors</a>
+                        </div>
+                        <div class="col-md-12">
+                            <h6 id="AnchorJoin" class="anchor">Join Whitelist</a>
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-4 col-xs-4 headlines">
                             <a href=""><span class="footer-link">Blog</span></a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-4 headlines">
@@ -404,7 +459,7 @@
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-4 headlines">
                             <a href=""><span class="footer-link">Privacy</span></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-4 headlines">
