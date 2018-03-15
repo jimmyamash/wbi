@@ -28,11 +28,11 @@ $(document).ready(function(){
 
     $(".faq-button-toggle").click(function(){
         if ($("body").hasClass("faqs")) {
-            $(".atf-coins-1").attr("src","img/coins-1.png");
-            $(".atf-coins-2").attr("src","img/coins-2.png");
+            $(".atf-image-switcher-1").attr("src","img/coins-1.png");
+            $(".atf-image-switcher-2").attr("src","img/coins-2.png");
         } else {
-            $(".atf-coins-1").attr("src","img/questions-1.png");
-            $(".atf-coins-2").attr("src","img/questions-2.png");
+            $(".atf-image-switcher-1").attr("src","img/questions-1.png");
+            $(".atf-image-switcher-2").attr("src","img/questions-2.png");
         }
         $('html,body').animate({ scrollTop: 0 }, 300);
         $("body").toggleClass("faqs");
@@ -48,8 +48,8 @@ $(document).ready(function(){
         var theID = $(this).attr("id");
         if ($("body").hasClass("faqs")) {
             $("body").removeClass("faqs");
-            $(".atf-coins-1").attr("src","img/coins-1.png");
-            $(".atf-coins-2").attr("src","img/coins-2.png");            
+            $(".atf-image-switcher-1").attr("src","img/coins-1.png");
+            $(".atf-image-switcher-2").attr("src","img/coins-2.png");
         }
         switch(theID) {
             case "AnchorAbout":

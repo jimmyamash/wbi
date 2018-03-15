@@ -491,6 +491,14 @@ body .border-right:after {
   background: rgba(0, 45, 114, 0.9);
 }
 
+body.faqs .row-strip * {
+  color: #f0f0f0;
+}
+
+body.faqs .row-strip {
+  background: #002d72;
+}
+
 body.faqs .row-footer * {
   color: #4fb1e9;
 }
@@ -763,7 +771,7 @@ body.no-flow {
     margin-left: 0 !important;
     margin-top: 10px !important;
   }
-  body .row-main-atf .cta + .cta {
+  body .row-main-atf .cta + .cta:not(.faq-button-toggle) {
     margin-top: 40px !important;
   }
   body .row-header {
