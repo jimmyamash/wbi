@@ -117,17 +117,17 @@ input[type="submit"]:focus {
   text-decoration: none;
 }
 
-body .shadow, body .row-main .cta, body .row-main .cta-secondary {
+body .shadow, body .row-main .cta, body .row-main .cta-secondary, body .row-main .cta-accent, body .row-alt .cta-accent, body.faqs .row-main .cta-accent, body.faqs .row-alt .cta-accent {
   transition: 0.3s;
   -webkit-box-shadow: 0 5px 8px transparent;
   -moz-box-shadow: 0 5px 8px transparent;
   box-shadow: 0 5px 8px transparent;
 }
 
-body .shadow:hover, body .row-main .cta:hover, body .row-main .cta-secondary:hover {
-  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+body .shadow:hover, body .row-main .cta:hover, body .row-main .cta-secondary:hover, body .row-main .cta-accent:hover, body .row-alt .cta-accent:hover {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 body .row-main .cta {
@@ -140,6 +140,18 @@ body .row-main .cta-secondary {
   border: 2px solid #f0f0f0;
   background: transparent;
   color: #f0f0f0;
+}
+
+body .row-main .cta-accent {
+  border: 2px solid #a0dab3;
+  background: #a0dab3;
+  color: #002d72;
+}
+
+body .row-alt .cta-accent {
+  border: 2px solid #a0dab3;
+  background: #a0dab3;
+  color: #002d72;
 }
 
 body .row-alt .cta {
@@ -176,6 +188,18 @@ body.faqs .row-alt .cta-secondary {
   border: 2px solid #4fb1e9;
   background: transparent;
   color: #4fb1e9;
+}
+
+body.faqs .row-main .cta-accent {
+  border: 2px solid #a0dab3;
+  background: #a0dab3;
+  color: #002d72;
+}
+
+body.faqs .row-alt .cta-accent {
+  border: 2px solid #a0dab3;
+  background: #a0dab3;
+  color: #002d72;
 }
 
 * {
@@ -231,6 +255,19 @@ body.faqs .row-alt .cta-secondary {
   z-index: -1000;
 }
 
+.em1 {
+  font-size: 1em !important;
+}
+
+.anchor {
+  cursor: pointer;
+}
+
+a h6 {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
 body {
   font-size: 12px;
   font-family: "AvenirNextLTW01";
@@ -263,6 +300,10 @@ body .team-photo {
   margin: auto;
   object-fit: cover;
   overflow: hidden;
+}
+
+body .hidden-content {
+  display: none;
 }
 
 body .team-photo img {
@@ -309,6 +350,10 @@ body .row-main {
   position: relative;
 }
 
+body .row-footer {
+  position: relative;
+}
+
 body .logo {
   width: 100%;
   max-width: 180px;
@@ -326,7 +371,13 @@ body .row-alt {
 
 body .faq-question {
   position: relative;
-  padding-right: 40px;
+  padding-left: 40px;
+}
+
+body .faq-question-first {
+  padding-left: 0;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 body .atf-coins {
@@ -381,7 +432,7 @@ body .atf-question-6 {
 body .faq-question .faq-expand {
   position: absolute;
   top: 0;
-  right: 10px;
+  left: 10px;
   bottom: 0;
   padding: 5px;
   margin: auto;
@@ -413,13 +464,58 @@ body .faq-question.active + .faq-answer {
 
 body .atf-image {
   margin-left: 0;
-  width: 100px;
+  width: 120px;
+}
+
+body .row-footer * {
+  color: #002d72;
+}
+
+body .row-footer {
+  background: #4fb1e9;
+}
+
+body .border-right:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 500px;
+  top: 300px;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 1px;
+  background: rgba(0, 45, 114, 0.9);
+}
+
+body.faqs .row-footer * {
+  color: #4fb1e9;
+}
+
+body.faqs .row-footer {
+  background: #002d72;
+}
+
+body.faqs .border-right:after {
+  background: rgba(79, 177, 233, 0.9);
 }
 
 body .row-height {
   min-height: 90vh;
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+body .row-height-sm {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+body .row-height-no-min {
+  min-height: 0;
 }
 
 body .row-footer {
@@ -512,6 +608,10 @@ body.faqs .hidden-faqs {
   display: none;
 }
 
+body.faqs .hidden-content {
+  display: block;
+}
+
 body.faqs .faq-group {
   display: block !important;
 }
@@ -550,6 +650,14 @@ body.faqs .item-group {
 
 body.faqs input[type="text"] {
   color: #4fb1e9;
+}
+
+body.faqs .row-strip input[type="text"],
+body.faqs .row-strip input[type="submit"] {
+  display: inline-block;
+  margin-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 body.no-flow {
@@ -598,7 +706,20 @@ body.no-flow {
   margin-bottom: 10px;
 }
 
+.margin-top-0 {
+  margin-top: 0;
+}
+
 @media (max-width: 991px) {
+  body border-right:after {
+    display: none;
+  }
+  body input[type="text"] {
+    width: 100%;
+  }
+  body form input[type="submit"] {
+    width: 100% !important;
+  }
   body .atf-coins {
     width: 100px;
   }
@@ -638,8 +759,12 @@ body.no-flow {
   }
   body .row-height {
     min-height: 70vh;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  body .row-height-sm.row {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
   body .row-footer {
     padding-bottom: 100px !important;
@@ -661,6 +786,10 @@ body.no-flow {
 }
 
 @media (min-width: 992px) {
+  .row-strip input[type="text"],
+  .row-strip input[type="submit"] {
+    margin-left: 5px;
+  }
   body {
     font-size: 14px;
   }
@@ -774,7 +903,9 @@ img,
 .video-thumb,
 .item-group,
 .g-recaptcha,
-iframe {
+iframe,
+address,
+.border-right:after {
   opacity: 0;
 }
 
@@ -793,7 +924,8 @@ iframe {
 .animate .video-thumb,
 .animate .item-group,
 .animate .g-recaptcha,
-.animate iframe {
+.animate iframe,
+.animate address {
   -webkit-animation-duration: 0.3s;
   -webkit-animation-name: fadeinup;
   -webkit-animation-fill-mode: forwards;
@@ -805,7 +937,8 @@ iframe {
   animation-fill-mode: forwards;
 }
 
-.animate .faq-expand {
+.animate .faq-expand,
+.animate .border-right:after {
   -webkit-animation-duration: 0.3s;
   -webkit-animation-name: fadein;
   -webkit-animation-fill-mode: forwards;
@@ -862,7 +995,9 @@ iframe {
 .animate .item-group,
 .animate .g-recaptcha,
 .animate iframe,
-.animate .faq-expand {
+.animate address,
+.animate .faq-expand,
+.animate .border-right:after {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
