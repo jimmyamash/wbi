@@ -70,12 +70,12 @@ body {
         margin-right: 10px;
     }
     .row {
-        width: 100%;
         padding-left: calc((100% - 1170px) / 2);
         padding-right: calc((100% - 1170px) / 2);
-        margin: auto;
     }
     .row-header {
+        width: 100%;
+        margin: auto;
         display: flex;
         align-items: center;
     }
@@ -422,6 +422,18 @@ body {
 
 @media (max-width: 991px) {
     body {
+        .timeline-group-left:before {
+            right: 20px;
+        }
+        .timeline-group-right:before {
+            left: 20px;
+        }
+        .timeline-group-left:after {
+            right: 12px;
+        }
+        .timeline-group-right:after {
+            left: 12px;
+        }
         border-right:after {
             display: none;
         }

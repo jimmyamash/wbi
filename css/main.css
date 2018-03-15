@@ -280,13 +280,13 @@ body .cta i {
 }
 
 body .row {
-  width: 100%;
   padding-left: calc((100% - 1170px) / 2);
   padding-right: calc((100% - 1170px) / 2);
-  margin: auto;
 }
 
 body .row-header {
+  width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
 }
@@ -711,6 +711,18 @@ body.no-flow {
 }
 
 @media (max-width: 991px) {
+  body .timeline-group-left:before {
+    right: 20px;
+  }
+  body .timeline-group-right:before {
+    left: 20px;
+  }
+  body .timeline-group-left:after {
+    right: 12px;
+  }
+  body .timeline-group-right:after {
+    left: 12px;
+  }
   body border-right:after {
     display: none;
   }
