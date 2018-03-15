@@ -48,6 +48,8 @@ $(document).ready(function(){
         var theID = $(this).attr("id");
         if ($("body").hasClass("faqs")) {
             $("body").removeClass("faqs");
+            $(".atf-coins-1").attr("src","img/coins-1.png");
+            $(".atf-coins-2").attr("src","img/coins-2.png");            
         }
         switch(theID) {
             case "AnchorAbout":
