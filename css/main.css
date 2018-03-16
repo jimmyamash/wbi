@@ -202,10 +202,6 @@ body.faqs .row-alt .cta-accent {
   color: #002d72;
 }
 
-* {
-  transition: color .3s, transform .3s, background .3s;
-}
-
 .timeline-group {
   padding: 40px;
 }
