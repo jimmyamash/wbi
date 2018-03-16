@@ -18,11 +18,30 @@ $(document).ready(function(){
         var trim = $(this).val().trim();
         $(this).val(trim);
     });
-    $(window).scroll(function(){
-        $(".row:not(.row-header):not(.row-main-atf)").appear(function(){
-            $(this).addClass("animate");
-        },{accX: 50, accY: -300});
-    });
+
+    var didScroll = false;
+
+    window.onscroll = doThisStuffOnScroll;
+
+    function doThisStuffOnScroll() {
+        didScroll = true;
+    }
+
+    setInterval(function() {
+        if(didScroll) {
+            didScroll = false;
+            console.log("scrollin' like a mutha fucka");
+            $(".row:not(.row-header):not(.row-main-atf)").appear(function(){
+                $(this).addClass("animate");
+            },{accX: 50, accY: -300});
+        }
+    }, 100);
+
+    // $(window).scroll(function(){
+    //     $(".row:not(.row-header):not(.row-main-atf)").appear(function(){
+    //         $(this).addClass("animate");
+    //     },{accX: 50, accY: -300});
+    // });
     $(".row-header").addClass("animate");
     $(".row-main-first").addClass("animate");
 
