@@ -30,7 +30,6 @@ $(document).ready(function(){
     setInterval(function() {
         if(didScroll) {
             didScroll = false;
-            console.log("scrollin' like a mutha fucka");
             $(".row:not(.row-header):not(.row-main-atf)").appear(function(){
                 $(this).addClass("animate");
             },{accX: 50, accY: -300});
