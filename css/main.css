@@ -817,9 +817,6 @@ body.no-flow {
   .row-strip input[type="submit"] {
     margin-left: 5px;
   }
-  body {
-    font-size: 14px;
-  }
   .desktop-inline-only {
     display: inline;
   }
