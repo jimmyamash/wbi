@@ -715,17 +715,28 @@ body.no-flow {
 }
 
 @media (max-width: 991px) {
+  body .timeline-group {
+    padding: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+    text-align: left;
+  }
   body .timeline-group-left:before {
-    right: 20px;
+    left: auto;
+    right: 0;
   }
   body .timeline-group-right:before {
-    left: 20px;
+    left: auto;
+    right: 0;
   }
   body .timeline-group-left:after {
-    right: 12px;
+    left: auto;
+    right: -8px;
   }
   body .timeline-group-right:after {
-    left: 12px;
+    left: auto;
+    right: -8px;
   }
   body border-right:after {
     display: none;
