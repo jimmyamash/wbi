@@ -40,7 +40,11 @@ input[disabled] {
 input,
 input:focus,
 input:active,
-input:hover {
+input:hover,
+textarea,
+textarea:focus,
+textarea:active,
+textarea:hover {
     outline: 0;
     border: 2px solid $color-white;
     -webkit-appearance: none;
@@ -137,6 +141,6 @@ body {
             background: $color-tertiary;
             color: $color-primary;
             @extend .shadow;
-        }        
+        }
     }
 }

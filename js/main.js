@@ -86,7 +86,7 @@ $(document).ready(function(){
 
     });
     //callback to load success window after signup
-    if(window.location.href.indexOf("success-content") > -1) {
+    if(window.location.href.indexOf("success-contact") > -1) {
         $("body").addClass("no-flow");
         $(".success-content").show();
     }

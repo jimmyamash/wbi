@@ -323,7 +323,8 @@ body {
     .underline {
         text-decoration: underline;
     }
-    input[type="text"] {
+    input[type="text"],
+    textarea {
         padding: 15px 10px;
         border: none;
         border: 2px solid $color-white;
@@ -363,7 +364,8 @@ body {
         .item-group {
             border-color: $color-secondary;
         }
-        input[type="text"] {
+        input[type="text"],
+        textarea {
             color: $color-secondary;
         }
         .row-strip {
@@ -414,7 +416,9 @@ body {
 .block-inputs {
     margin-bottom: 80px;
 }
-.block-inputs input {
+.block-inputs input,
+.block-inputs textarea,
+.block-inputs .g-recaptcha > div {
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -454,8 +458,10 @@ body {
         border-right:after {
             display: none;
         }
-        input[type="text"] {
-            width: 100%;
+        input[type="text"],
+        textarea,
+        .g-recaptcha > div {
+            width: 100% !important;
         }
         form input[type="submit"] {
             width: 100% !important;
@@ -577,6 +583,7 @@ p,
 i,
 a,
 input,
+textarea,
 button,
 img,
 .video-thumb,
@@ -598,6 +605,7 @@ address,
     a,
     i,
     input,
+    textarea,
     button,
     img,
     .video-thumb,
@@ -633,6 +641,7 @@ address,
     i,
     a,
     input,
+    textarea,
     button,
     .video-thumb,
     .item-group,
