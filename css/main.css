@@ -210,6 +210,24 @@ body.faqs .row-alt .cta-accent {
   padding: 40px;
 }
 
+.timeline-group p {
+  padding-left: 20px;
+}
+
+.timeline-group .sub-item {
+  padding-left: 40px;
+}
+
+.timeline-group p:before {
+  content: '-';
+  padding-right: 20px;
+}
+
+.timeline-group .sub-item:before {
+  content: '-';
+  padding-right: 20px;
+}
+
 .timeline-group:before,
 .timeline-group:after {
   content: "";
@@ -739,6 +757,9 @@ body.no-flow {
 }
 
 @media (max-width: 991px) {
+  body {
+    font-size: 11px;
+  }
   body .timeline-group {
     padding: 0;
     padding-right: 15px;
