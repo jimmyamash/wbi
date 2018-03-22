@@ -66,6 +66,9 @@ body {
     font-family: $font-primary;
     font-weight: $font-weight;
     background: $color-primary;
+    .team-member-row p {
+        font-size: 1.3em;
+    }
     .cta i {
         margin-right: 10px;
     }
@@ -82,7 +85,7 @@ body {
     .team-photo {
         @include border-radius(50%);
         margin-bottom: 20px;
-        max-width: 200px;
+        max-width: 100px;
         margin: auto;
         object-fit: cover;
         overflow: hidden;
@@ -234,6 +237,15 @@ body {
         width: 1px;
         background: $color-primary-transparent;
     }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .row-learn i {
+        color: $color-tertiary;
+    }
     &.faqs {
         .row-strip * {
             color: $color-white;
@@ -253,8 +265,8 @@ body {
     }
     .row-height {
         min-height: 90vh;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     .row-height-sm {
         padding-top: 60px !important;
