@@ -226,7 +226,7 @@ body.faqs .row-alt .cta-accent {
 .timeline-group-right:before {
   left: -2px;
   width: 4px;
-  height: 100%;
+  height: 120%;
 }
 
 .timeline-group-left:after {
