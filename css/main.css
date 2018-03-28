@@ -307,6 +307,7 @@ body {
 
 body .team-member-row p {
   font-size: 1.3em;
+  display: none;
 }
 
 body .cta i {
@@ -660,7 +661,7 @@ body.faqs .atf-question {
 }
 
 body.faqs .hidden-faqs {
-  display: none;
+  display: none !important;
 }
 
 body.faqs .hidden-content {

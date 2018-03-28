@@ -45,16 +45,20 @@ $(document).ready(function(){
     $(".row-main-first").addClass("animate");
 
     $(".faq-button-toggle").click(function(){
-        if ($("body").hasClass("faqs")) {
-            $(".atf-image-switcher-1").attr("src","img/coins-1.png");
-            $(".atf-image-switcher-2").attr("src","img/coins-2.png");
-        } else {
-            $(".atf-image-switcher-1").attr("src","img/questions-1.png");
-            $(".atf-image-switcher-2").attr("src","img/questions-2.png");
-        }
         $('html,body').animate({ scrollTop: 0 }, 300);
         $("body").toggleClass("faqs");
         $(".row:not(.row-header):not(.row-main-atf)").removeClass("animate");
+        if ($("body").hasClass("faqs")) {
+            $("body.faqs .row-contact").addClass("animate");
+            $(".atf-image-switcher-1").attr("src","img/coins-1.png");
+            $(".atf-image-switcher-2").attr("src","img/coins-2.png");
+        } else {
+            setTimeout(function(){
+                $("body.faqs .row-contact").addClass("animate");
+            },100);
+            $(".atf-image-switcher-1").attr("src","img/questions-1.png");
+            $(".atf-image-switcher-2").attr("src","img/questions-2.png");
+        }
     });
     $(".learn-more").click(function(){
         $("html, body").animate({ scrollTop: $('#Learn').offset().top }, 300);

@@ -82,6 +82,7 @@ body {
     background: $color-primary;
     .team-member-row p {
         font-size: 1.3em;
+        display: none;
     }
     .cta i {
         margin-right: 10px;
@@ -364,7 +365,7 @@ body {
             display: block;
         }
         .hidden-faqs {
-            display: none;
+            display: none !important;
         }
         .hidden-content {
             display: block;
