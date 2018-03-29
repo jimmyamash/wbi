@@ -14,7 +14,6 @@
 
 h1 {
   font-size: 4em;
-  line-height: 1.5em !important;
 }
 
 h2 {
@@ -793,7 +792,7 @@ body.no-flow {
 }
 
 .mobile-only {
-  display: inline-block;
+  display: block;
 }
 
 .d-block {
@@ -868,10 +867,10 @@ body.no-flow {
   body input[type="text"],
   body textarea,
   body .g-recaptcha > div {
-    width: 100% !important;
+    width: 300px !important;
   }
   body form input[type="submit"] {
-    width: 100% !important;
+    width: 300px !important;
   }
   body .atf-coins {
     width: 100px;
@@ -900,10 +899,6 @@ body.no-flow {
     position: relative;
     display: block;
   }
-  body .cta + .cta {
-    margin-left: 0 !important;
-    margin-top: 10px !important;
-  }
   body .row-main-atf .cta + .cta:not(.faq-button-toggle) {
     margin-top: 40px !important;
   }
@@ -930,7 +925,9 @@ body.no-flow {
   }
   body .cta,
   body .cta-secondary {
-    width: 100%;
+    width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   body .headlines {
     margin-top: 40px;

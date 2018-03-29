@@ -472,7 +472,7 @@ body {
     display: none;
 }
 .mobile-only {
-    display: inline-block;
+    display: block;
 }
 .d-block {
     display: block !important;
@@ -545,10 +545,10 @@ body {
         input[type="text"],
         textarea,
         .g-recaptcha > div {
-            width: 100% !important;
+            width: 300px !important;
         }
         form input[type="submit"] {
-            width: 100% !important;
+            width: 300px !important;
         }
         .atf-coins {
             width: 100px;
@@ -577,10 +577,6 @@ body {
             position: relative;
             display: block;
         }
-        .cta + .cta {
-            margin-left: 0 !important;
-            margin-top: 10px !important;
-        }
         .row-main-atf .cta + .cta:not(.faq-button-toggle) {
             margin-top: 40px !important;
         }
@@ -607,7 +603,9 @@ body {
         }
         .cta,
         .cta-secondary {
-            width: 100%;
+            width: 300px;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
         .headlines {
             margin-top: 40px;
