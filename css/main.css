@@ -14,6 +14,7 @@
 
 h1 {
   font-size: 4em;
+  line-height: 1.5em !important;
 }
 
 h2 {
@@ -259,20 +260,70 @@ body.faqs .row-alt .cta-accent {
   height: 120%;
 }
 
+.row-roadmap .content-group:last-child .row:last-child .timeline-group:before {
+  height: 120%;
+}
+
+.side-image img {
+  position: absolute;
+  left: calc(100vw - 45vh);
+  top: 0;
+  width: 90vh;
+}
+
 .timeline-group-left:after {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   top: 20px;
-  right: -10px;
+  right: -30px;
+  border: 10px solid #f0f0f0;
+  background: #002d72;
 }
 
 .timeline-group-right:after {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   top: 20px;
-  left: -10px;
+  left: -30px;
+  border: 10px solid #f0f0f0;
+  background: #a0dab3;
+}
+
+.icons-tertiary i {
+  color: #f0f0f0 !important;
+  background: #a0dab3;
+  border: 10px solid #002d72;
+  border-radius: 50%;
+  line-height: 82px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bg-primary div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icons-secondary i {
+  color: #f0f0f0 !important;
+  background: #4fb1e9;
+  border: 10px solid #002d72;
+  border-radius: 50%;
+  line-height: 82px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background: #002d72;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .preloader {
@@ -534,6 +585,10 @@ body .bold {
   font-weight: bold;
 }
 
+body .color-tertiary {
+  color: #a0dab3;
+}
+
 body .row-learn i {
   color: #a0dab3;
 }
@@ -773,6 +828,9 @@ body.no-flow {
   body {
     font-size: 11px;
   }
+  body .side-image {
+    display: none;
+  }
   body .timeline-group {
     padding: 0;
     padding-right: 15px;
@@ -782,19 +840,19 @@ body.no-flow {
   }
   body .timeline-group-left:before {
     left: auto;
-    right: 0;
+    right: -30px;
   }
   body .timeline-group-right:before {
     left: auto;
-    right: 0;
+    right: -30px;
   }
   body .timeline-group-left:after {
     left: auto;
-    right: -8px;
+    right: -58px;
   }
   body .timeline-group-right:after {
     left: auto;
-    right: -8px;
+    right: -58px;
   }
   body border-right:after {
     display: none;
