@@ -12,6 +12,9 @@
 .timeline-group {
     padding: 40px;
 }
+.no-flow {
+    overflow: hidden;
+}
 .timeline-group p {
     padding-left: 20px;
 }
@@ -329,6 +332,9 @@ body {
         min-height: 90vh;
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    .row-alt + .row-alt {
+        padding-top: 0 !important;
     }
     .row-height-sm {
         padding-top: 60px !important;
