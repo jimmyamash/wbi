@@ -222,6 +222,10 @@ body.faqs .row-alt .cta-accent {
   padding: 40px;
 }
 
+.timeline-group h6 {
+  color: #a0dab3;
+}
+
 .no-flow {
   overflow: hidden;
 }
