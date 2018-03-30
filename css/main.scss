@@ -9,6 +9,68 @@
 // }
 
 // core
+.atf-logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -100px;
+}
+.lines {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    .line {
+        position: relative;
+        width: 10%;
+        display: inline-block;
+        &:before,
+        &:after {
+            content:'';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        &:before {
+            width: 100%;
+            height: 20px;
+            background: $color-white;
+        }
+        &:after {
+            left: calc(100% - 75px);
+            width: 100px;
+            height: 100px;
+            top: 0;
+            @include border-radius(50%);
+            border: 20px solid $color-white;
+            z-index: 2;
+        }
+        &:nth-child(3n+1) {
+            &:after {
+                background: $color-primary;
+            }
+        }
+        &:nth-child(3n+2) {
+            &:after {
+                background: $color-secondary;
+            }
+        }
+        &:nth-child(3n+3) {
+            &:after {
+                background: $color-tertiary;
+            }
+        }
+        &:last-child {
+            &:before {
+                width: 200%;
+            }
+        }
+    }
+}
 .timeline-group {
     padding: 40px;
 }
@@ -84,7 +146,9 @@
     width: 100px;
     height: 100px;
     padding: 0;
-    margin-bottom: 20px;
+}
+.row-item {
+    margin-bottom: 60px;
 }
 .bg-primary div {
     margin-top: 10px;
@@ -98,7 +162,6 @@
     line-height: 82px;
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
 }
 .bg-primary {
     background: $color-primary;
@@ -283,6 +346,7 @@ body {
         max-height: 1000px;
     }
     .atf-image {
+        margin-top: 75px;
         margin-left: 0;
         width: 120px;
     }
@@ -486,7 +550,8 @@ body {
         color: $color-white;
     }
 }
-.social-links {
+.social-links,
+.social-links-mobile {
     a {
         color: $color-white;
         margin: 10px 0;
@@ -516,6 +581,18 @@ body {
 
 @media (max-width: 991px) {
     body {
+        .atf-logo {
+            width: 120px;
+            height: 120px;
+            top: 0;
+            margin-left: -60px;
+        }
+        .lines {
+            display: none;
+        }
+        .faq-button-toggle {
+            display: none;
+        }
         .side-image {
             display: none;
         }
@@ -564,8 +641,8 @@ body {
         }
         .item-group {
             padding: 0;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 60px;
         }
         .mobile-only .cta {
             margin-top: 10px;

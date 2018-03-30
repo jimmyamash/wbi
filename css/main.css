@@ -218,6 +218,71 @@ body.faqs .row-alt .cta-accent {
   color: #002d72;
 }
 
+.atf-logo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.lines {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  left: 0;
+}
+
+.lines .line {
+  position: relative;
+  width: 10%;
+  display: inline-block;
+}
+
+.lines .line:before, .lines .line:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.lines .line:before {
+  width: 100%;
+  height: 20px;
+  background: #f0f0f0;
+}
+
+.lines .line:after {
+  left: calc(100% - 75px);
+  width: 100px;
+  height: 100px;
+  top: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 20px solid #f0f0f0;
+  z-index: 2;
+}
+
+.lines .line:nth-child(3n+1):after {
+  background: #002d72;
+}
+
+.lines .line:nth-child(3n+2):after {
+  background: #4fb1e9;
+}
+
+.lines .line:nth-child(3n+3):after {
+  background: #a0dab3;
+}
+
+.lines .line:last-child:before {
+  width: 200%;
+}
+
 .timeline-group {
   padding: 40px;
 }
@@ -307,7 +372,10 @@ body.faqs .row-alt .cta-accent {
   width: 100px;
   height: 100px;
   padding: 0;
-  margin-bottom: 20px;
+}
+
+.row-item {
+  margin-bottom: 60px;
 }
 
 .bg-primary div {
@@ -323,7 +391,6 @@ body.faqs .row-alt .cta-accent {
   line-height: 82px;
   width: 100px;
   height: 100px;
-  margin-bottom: 20px;
 }
 
 .bg-primary {
@@ -557,6 +624,7 @@ body .faq-question.active + .faq-answer {
 }
 
 body .atf-image {
+  margin-top: 75px;
   margin-left: 0;
   width: 120px;
 }
@@ -808,7 +876,8 @@ body.no-flow {
   color: #f0f0f0;
 }
 
-.social-links a {
+.social-links a,
+.social-links-mobile a {
   color: #f0f0f0;
   margin: 10px 0;
 }
@@ -839,6 +908,18 @@ body.no-flow {
 @media (max-width: 991px) {
   body {
     font-size: 11px;
+  }
+  body .atf-logo {
+    width: 120px;
+    height: 120px;
+    top: 0;
+    margin-left: -60px;
+  }
+  body .lines {
+    display: none;
+  }
+  body .faq-button-toggle {
+    display: none;
   }
   body .side-image {
     display: none;
@@ -886,8 +967,8 @@ body.no-flow {
   }
   body .item-group {
     padding: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
   body .mobile-only .cta {
     margin-top: 10px;
