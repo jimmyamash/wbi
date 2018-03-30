@@ -39,6 +39,8 @@
             width: 100%;
             height: 20px;
             background: $color-white;
+            z-index: 1;
+            margin-left: 5px;
         }
         &:after {
             left: calc(100% - 75px);
@@ -755,6 +757,8 @@ img,
 .g-recaptcha,
 iframe,
 address,
+.lines,
+.line,
 .border-right:after {
     opacity: 0;
 }
@@ -776,6 +780,8 @@ address,
     .item-group,
     .g-recaptcha,
     iframe,
+    .lines,
+    .line,
     address {
         @include animation(.3s, fadeinup);
     }
@@ -800,6 +806,38 @@ address,
     }
     h6 {
         @include animation-delay(.2s);
+    }
+    .line {
+        &:first-child {
+            @include animation-delay(.1s);
+        }
+        &:nth-child(2) {
+            @include animation-delay(.2s);
+        }
+        &:nth-child(3) {
+            @include animation-delay(.3s);
+        }
+        &:nth-child(4) {
+            @include animation-delay(.4s);
+        }
+        &:nth-child(5) {
+            @include animation-delay(.5s);
+        }
+        &:nth-child(6) {
+            @include animation-delay(.6s);
+        }
+        &:nth-child(7) {
+            @include animation-delay(.7s);
+        }
+        &:nth-child(8) {
+            @include animation-delay(.8s);
+        }
+        &:nth-child(9) {
+            @include animation-delay(.9s);
+        }
+        &:nth-child(10) {
+            @include animation-delay(1s);
+        }
     }
     p,
     i,
