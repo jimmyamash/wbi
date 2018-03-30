@@ -31,9 +31,10 @@
         &:after {
             content:'';
             position: absolute;
-            top: 0;
+            top: 10px;
             bottom: 0;
             margin: auto;
+            @include transform(translateZ(0));
         }
         &:before {
             width: 100%;

@@ -244,9 +244,14 @@ body.faqs .row-alt .cta-accent {
 .lines .line:before, .lines .line:after {
   content: '';
   position: absolute;
-  top: 0;
+  top: 10px;
   bottom: 0;
   margin: auto;
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .lines .line:before {
