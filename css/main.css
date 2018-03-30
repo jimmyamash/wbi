@@ -227,6 +227,10 @@ body.faqs .row-alt .cta-accent {
   margin-left: -100px;
 }
 
+.row-main-atf {
+  overflow: hidden;
+}
+
 .lines {
   position: absolute;
   bottom: 0;
