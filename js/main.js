@@ -94,6 +94,10 @@ $(document).ready(function(){
         $("body").addClass("no-flow");
         $(".success-content").show();
     }
+    if(window.location.href.indexOf("success-whitelist") > -1) {
+        $("body").addClass("no-flow");
+        $(".success-whitelist").show();
+    }
     $(".error-hide").click(function(){
         $(".error").hide();
     });
