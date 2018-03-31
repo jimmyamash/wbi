@@ -12,24 +12,54 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Calibri';
+  src: url("../fonts/Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-size: 4em;
+  font-family: 'Calibri';
 }
 
 h2 {
   font-size: 3em;
+  font-family: 'Calibri';
 }
 
 h3 {
   font-size: 2.25em;
+  font-family: 'Calibri';
 }
 
 h4 {
   font-size: 2em;
+  font-family: 'Calibri';
 }
 
 h5 {
   font-size: 1.75em;
+  font-family: 'Calibri';
+}
+
+h6 {
+  font-family: 'Calibri';
 }
 
 h6,
@@ -37,8 +67,13 @@ p {
   font-size: 1.5em;
 }
 
+p {
+  font-family: 'Open Sans';
+}
+
 a, .media-wrap-link, button, input[type="text"], input[type="submit"], textarea {
   font-size: 1.4em;
+  font-family: 'Open Sans';
 }
 
 @media (max-width: 991px) {
@@ -216,6 +251,14 @@ body.faqs .row-alt .cta-accent {
   border: 2px solid #a0dab3;
   background: #a0dab3;
   color: #002d72;
+}
+
+.social-links,
+.social-links-mobile,
+.snapwidget-widget {
+  opacity: 0;
+  pointer-events: none !important;
+  visibility: hidden;
 }
 
 .atf-logo {
