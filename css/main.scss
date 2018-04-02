@@ -8,8 +8,7 @@
 //     transition: color .3s, transform .3s, background .3s;
 // }
 .social-links,
-.social-links-mobile,
-.snapwidget-widget {
+.social-links-mobile {
     opacity: 0;
     pointer-events: none !important;
     visibility: hidden;
@@ -27,6 +26,7 @@
     overflow: hidden;
 }
 .lines {
+    display: none;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -141,9 +141,9 @@
 }
 .side-image img {
     position: absolute;
-    left: 50%;
+    right: 0;
     top: 0;
-    width: 50%;
+    width: 33.333334%;
     height: 100%;
     object-fit: cover;
 }
@@ -241,7 +241,7 @@ body {
     .team-photo {
         @include border-radius(50%);
         margin-bottom: 20px;
-        max-width: 220px;
+        max-width: 180px;
         margin: auto;
         object-fit: cover;
         overflow: hidden;
@@ -604,6 +604,9 @@ body {
         margin: 10px 0;
     }
 }
+.row-footer {
+    padding-bottom: 0 !important;
+}
 .coming-soon {
     width: 100%;
     max-width: 300px;
@@ -647,8 +650,10 @@ body {
         .faq-button-toggle {
             display: none;
         }
-        .side-image {
-            display: none;
+        .side-image img {
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
         }
 
         font-size: 11px;

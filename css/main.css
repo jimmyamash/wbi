@@ -259,8 +259,7 @@ body.faqs .row-alt .cta-accent {
 }
 
 .social-links,
-.social-links-mobile,
-.snapwidget-widget {
+.social-links-mobile {
   opacity: 0;
   pointer-events: none !important;
   visibility: hidden;
@@ -280,6 +279,7 @@ body.faqs .row-alt .cta-accent {
 }
 
 .lines {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -413,9 +413,9 @@ body.faqs .row-alt .cta-accent {
 
 .side-image img {
   position: absolute;
-  left: 50%;
+  right: 0;
   top: 0;
-  width: 50%;
+  width: 33.333334%;
   height: 100%;
   object-fit: cover;
 }
@@ -533,7 +533,7 @@ body .team-photo {
   -moz-border-radius: 50%;
   border-radius: 50%;
   margin-bottom: 20px;
-  max-width: 220px;
+  max-width: 180px;
   margin: auto;
   object-fit: cover;
   overflow: hidden;
@@ -979,6 +979,10 @@ body.no-flow {
   margin: 10px 0;
 }
 
+.row-footer {
+  padding-bottom: 0 !important;
+}
+
 .coming-soon {
   width: 100%;
   max-width: 300px;
@@ -1027,8 +1031,10 @@ body.no-flow {
   body .faq-button-toggle {
     display: none;
   }
-  body .side-image {
-    display: none;
+  body .side-image img {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
   }
   body .timeline-group {
     padding: 0;
