@@ -68,6 +68,10 @@ input[type="submit"]:focus {
     text-decoration: none;
 }
 body {
+    .cta-secondary-color {
+        background: $color-secondary;
+        color: $color-white;
+    }
     .shadow {
         transition: $transition;
         @include box-shadow(0,5px,8px, $color-shadow-none);

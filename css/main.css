@@ -168,6 +168,11 @@ input[type="submit"]:focus {
   text-decoration: none;
 }
 
+body .cta-secondary-color {
+  background: #4fb1e9;
+  color: #f0f0f0;
+}
+
 body .shadow, body .row-main .cta, body .row-main .cta-secondary, body .row-main .cta-accent, body .row-alt .cta-accent, body.faqs .row-main .cta-accent, body.faqs .row-alt .cta-accent {
   transition: 0.3s;
   -webkit-box-shadow: 0 5px 8px transparent;
@@ -383,18 +388,36 @@ body.faqs .row-alt .cta-accent {
 .timeline-group-right:before {
   left: -2px;
   width: 4px;
-  height: 120%;
+  height: 110%;
 }
 
 .row-roadmap .content-group:last-child .row:last-child .timeline-group:before {
-  height: 120%;
+  height: 0;
+}
+
+.color-primary {
+  color: #002d72;
+}
+
+.learn-half {
+  max-width: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: -100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .side-image img {
   position: absolute;
-  left: calc(100vw - 45vh);
+  left: 50%;
   top: 0;
-  width: 90vh;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .timeline-group-left:after {
@@ -584,6 +607,21 @@ body .row-alt {
   position: relative;
 }
 
+body .row-alt-dark {
+  background: #333333;
+  color: #4fb1e9;
+}
+
+body .row-alt-dark i {
+  color: #f0f0f0;
+}
+
+body .row-alt-white {
+  background: white;
+  color: #4fb1e9;
+  position: relative;
+}
+
 body .faq-question {
   position: relative;
   padding-left: 40px;
@@ -707,8 +745,16 @@ body .border-right:after {
   background: rgba(0, 45, 114, 0.9);
 }
 
+body .color-white {
+  color: #f0f0f0;
+}
+
 body .uppercase {
   text-transform: uppercase;
+}
+
+body .row-item h6 {
+  margin-top: 60px;
 }
 
 body .bold {
@@ -716,10 +762,6 @@ body .bold {
 }
 
 body .color-tertiary {
-  color: #a0dab3;
-}
-
-body .row-learn i {
   color: #a0dab3;
 }
 
@@ -749,13 +791,14 @@ body .row-height {
   padding-bottom: 80px;
 }
 
-body .row-alt + .row-alt {
-  padding-top: 0 !important;
+body .row-height-sm-lg-padding {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 
 body .row-height-sm {
-  padding-top: 60px !important;
-  padding-bottom: 60px !important;
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
 }
 
 body .row-height-no-min {
@@ -942,8 +985,17 @@ body.no-flow {
   margin-top: 80px;
 }
 
+.padding-top-zero {
+  padding-top: 0 !important;
+}
+
 .block-inputs {
   margin-bottom: 80px;
+}
+
+.item-wrap-margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .block-inputs input,
@@ -1050,6 +1102,10 @@ body.no-flow {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
   }
+  body .learn-half {
+    max-width: 100px;
+    margin-top: -50px;
+  }
   body .row-height-sm.row {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
@@ -1076,6 +1132,10 @@ body.no-flow {
 }
 
 @media (min-width: 992px) {
+  .row-padding-side-sm {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
   .row-strip input[type="text"],
   .row-strip input[type="submit"] {
     margin-left: 5px;

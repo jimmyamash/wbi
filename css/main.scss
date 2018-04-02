@@ -120,16 +120,32 @@
 .timeline-group-right:before {
     left: -2px;
     width: 4px;
-    height: 120%;
+    height: 110%;
 }
 .row-roadmap .content-group:last-child .row:last-child .timeline-group:before {
-    height: 120%;
+    height: 0;
+}
+.color-primary {
+    color: $color-primary;
+}
+.learn-half {
+    max-width: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: -100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .side-image img {
     position: absolute;
-    left: calc(100vw - 45vh);
+    left: 50%;
     top: 0;
-    width: 90vh;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
 }
 .timeline-group-left:after {
     width: 60px;
@@ -286,6 +302,18 @@ body {
         color: $color-primary;
         position: relative;
     }
+    .row-alt-dark {
+        background: $color-dark;
+        color: $color-secondary;
+    }
+    .row-alt-dark i {
+        color: $color-white;
+    }
+    .row-alt-white {
+        background: $color-white-pure;
+        color: $color-secondary;
+        position: relative;
+    }
     .faq-question {
         position: relative;
         padding-left: 40px;
@@ -379,16 +407,19 @@ body {
         width: 1px;
         background: $color-primary-transparent;
     }
+    .color-white {
+        color: $color-white;
+    }
     .uppercase {
         text-transform: uppercase;
+    }
+    .row-item h6 {
+        margin-top: 60px;
     }
     .bold {
         font-weight: bold;
     }
     .color-tertiary {
-        color: $color-tertiary;
-    }
-    .row-learn i {
         color: $color-tertiary;
     }
     &.faqs {
@@ -413,12 +444,16 @@ body {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    .row-alt + .row-alt {
-        padding-top: 0 !important;
+    // .row-alt + .row-alt {
+    //     padding-top: 0 !important;
+    // }
+    .row-height-sm-lg-padding {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
     }
     .row-height-sm {
-        padding-top: 60px !important;
-        padding-bottom: 60px !important;
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
     }
     .row-height-no-min {
         min-height: 0;
@@ -574,8 +609,15 @@ body {
     max-width: 300px;
     margin-top: 80px;
 }
+.padding-top-zero {
+    padding-top: 0 !important;
+}
 .block-inputs {
     margin-bottom: 80px;
+}
+.item-wrap-margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .block-inputs input,
 .block-inputs textarea,
@@ -682,6 +724,10 @@ body {
             padding-top: 40px !important;
             padding-bottom: 40px !important;
         }
+        .learn-half {
+            max-width: 100px;
+            margin-top: -50px;
+        }
         .row-height-sm.row {
             padding-top: 40px !important;
             padding-bottom: 40px !important;
@@ -708,6 +754,10 @@ body {
     }
 }
 @media (min-width: 992px) {
+    .row-padding-side-sm {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
     .row-strip {
         input[type="text"],
         input[type="submit"] {
