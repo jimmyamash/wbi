@@ -968,7 +968,7 @@ body.no-flow {
 }
 
 .desktop-only {
-  display: none !important;
+  display: none;
 }
 
 .desktop-inline-only {
@@ -1032,6 +1032,9 @@ body.no-flow {
 @media (max-width: 991px) {
   body {
     font-size: 11px;
+  }
+  body .mobile-hide {
+    display: none !important;
   }
   body .row-item h6 {
     max-width: 240px;

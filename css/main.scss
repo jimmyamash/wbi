@@ -592,7 +592,7 @@ body {
 // helper classes
 
 .desktop-only {
-    display: none !important;
+    display: none;
 }
 .desktop-inline-only {
     display: none;
@@ -649,6 +649,9 @@ body {
 
 @media (max-width: 991px) {
     body {
+        .mobile-hide {
+            display: none !important;
+        }
         .row-item h6 {
             max-width: 240px;
             margin: auto;
