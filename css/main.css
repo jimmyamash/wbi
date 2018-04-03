@@ -588,6 +588,15 @@ body .overlay-close {
   cursor: pointer;
 }
 
+body .footer-links a h6 {
+  font-size: 1.1em;
+}
+
+body .row-privacy li,
+body .row-terms li {
+  font-size: 1.3em;
+}
+
 body .row-main {
   color: #f0f0f0;
   position: relative;
@@ -599,7 +608,7 @@ body .row-footer {
 
 body .logo {
   width: 100%;
-  max-width: 180px;
+  max-width: 160px;
 }
 
 body .row-main.row-main-first {

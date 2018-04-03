@@ -287,6 +287,13 @@ body {
         z-index: 2;
         cursor: pointer;
     }
+    .footer-links a h6 {
+        font-size: 1.1em;
+    }
+    .row-privacy li,
+    .row-terms li {
+        font-size: 1.3em;
+    }
     .row-main {
         color: $color-white;
         position: relative;
@@ -296,7 +303,7 @@ body {
     }
     .logo {
         width: 100%;
-        max-width: 180px;
+        max-width: 160px;
     }
     .row-main.row-main-first {
         padding-top: 200px;
