@@ -64,7 +64,7 @@ h6 {
 
 h6,
 p {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 p {
@@ -589,7 +589,7 @@ body .overlay-close {
 }
 
 body .footer-links a h6 {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 body .row-privacy li,
@@ -768,7 +768,7 @@ body .uppercase {
 }
 
 body .row-item h6 {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 body .bold {
@@ -968,7 +968,7 @@ body.no-flow {
 }
 
 .desktop-only {
-  display: none;
+  display: none !important;
 }
 
 .desktop-inline-only {
@@ -1026,12 +1026,20 @@ body.no-flow {
 }
 
 .margin-top-0 {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 @media (max-width: 991px) {
   body {
     font-size: 11px;
+  }
+  body .row-item h6 {
+    max-width: 240px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  body .cta-center-mobile {
+    display: block;
   }
   body .atf-logo {
     width: 120px;
