@@ -258,13 +258,6 @@ body.faqs .row-alt .cta-accent {
   color: #002d72;
 }
 
-.social-links,
-.social-links-mobile {
-  opacity: 0;
-  pointer-events: none !important;
-  visibility: hidden;
-}
-
 .atf-logo {
   width: 200px;
   height: 200px;
