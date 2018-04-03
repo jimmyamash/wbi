@@ -298,7 +298,7 @@ body {
     }
     .logo {
         width: 100%;
-        max-width: 160px;
+        max-width: 200px;
     }
     .row-main.row-main-first {
         padding-top: 200px;
@@ -636,14 +636,14 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.margin-top-0 {
-    margin-top: 0 !important;
-}
 
 // responsive
 
 @media (max-width: 991px) {
     body {
+        .margin-top-0 {
+            margin-top: 0 !important;
+        }
         .mobile-hide {
             display: none !important;
         }
