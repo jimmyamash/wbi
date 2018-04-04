@@ -71,7 +71,7 @@ p {
   font-family: 'Open Sans';
 }
 
-a, .media-wrap-link, button, input[type="text"], input[type="submit"], textarea {
+a, .media-wrap-link, button, input[type="text"], input[type="email"], input[type="submit"], textarea {
   font-size: 1.4em;
   font-family: 'Open Sans';
 }
@@ -880,6 +880,7 @@ body .underline {
 }
 
 body input[type="text"],
+body input[type="email"],
 body textarea {
   padding: 15px 10px;
   border: none;
@@ -944,11 +945,13 @@ body.faqs .item-group {
 }
 
 body.faqs input[type="text"],
+body.faqs input[type="email"],
 body.faqs textarea {
   color: #4fb1e9;
 }
 
 body.faqs .row-strip input[type="text"],
+body.faqs .row-strip input[type="email"],
 body.faqs .row-strip input[type="submit"] {
   display: inline-block;
   margin-top: 10px;
@@ -1080,6 +1083,7 @@ body.no-flow {
     display: none;
   }
   body input[type="text"],
+  body input[type="email"],
   body textarea,
   body .g-recaptcha > div {
     width: 300px !important;
@@ -1160,6 +1164,7 @@ body.no-flow {
     padding-right: 40px !important;
   }
   .row-strip input[type="text"],
+  .row-strip input[type="email"],
   .row-strip input[type="submit"] {
     margin-left: 5px;
   }

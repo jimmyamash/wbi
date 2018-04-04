@@ -525,6 +525,7 @@ body {
         text-decoration: underline;
     }
     input[type="text"],
+    input[type="email"],
     textarea {
         padding: 15px 10px;
         border: none;
@@ -566,11 +567,13 @@ body {
             border-color: $color-secondary;
         }
         input[type="text"],
+        input[type="email"],
         textarea {
             color: $color-secondary;
         }
         .row-strip {
             input[type="text"],
+            input[type="email"],
             input[type="submit"] {
                 display: inline-block;
                 margin-top: 10px;
@@ -701,6 +704,7 @@ body {
             display: none;
         }
         input[type="text"],
+        input[type="email"],
         textarea,
         .g-recaptcha > div {
             width: 300px !important;
@@ -782,6 +786,7 @@ body {
     }
     .row-strip {
         input[type="text"],
+        input[type="email"],
         input[type="submit"] {
             margin-left: 5px;
         }
