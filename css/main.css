@@ -1288,27 +1288,27 @@ address,
   opacity: 0;
 }
 
-.animate h1,
-.animate h2,
-.animate h3,
-.animate h4,
-.animate h5,
-.animate h6,
-.animate p,
-.animate a,
-.animate li,
-.animate i,
-.animate input,
-.animate textarea,
-.animate button,
-.animate img,
-.animate .video-thumb,
-.animate .item-group,
-.animate .g-recaptcha,
-.animate iframe,
-.animate .lines,
-.animate .line,
-.animate address {
+.row h1,
+.row h2,
+.row h3,
+.row h4,
+.row h5,
+.row h6,
+.row p,
+.row a,
+.row li,
+.row i,
+.row input,
+.row textarea,
+.row button,
+.row img,
+.row .video-thumb,
+.row .item-group,
+.row .g-recaptcha,
+.row iframe,
+.row .lines,
+.row .line,
+.row address {
   -webkit-animation-duration: 0.3s;
   -webkit-animation-name: fadeinup;
   -webkit-animation-fill-mode: forwards;
@@ -1320,8 +1320,8 @@ address,
   animation-fill-mode: forwards;
 }
 
-.animate .faq-expand,
-.animate .border-right:after {
+.row .faq-expand,
+.row .border-right:after {
   -webkit-animation-duration: 0.3s;
   -webkit-animation-name: fadein;
   -webkit-animation-fill-mode: forwards;
@@ -1333,122 +1333,122 @@ address,
   animation-fill-mode: forwards;
 }
 
-.animate h1 {
+.row h1 {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.animate h2 {
+.row h2 {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.animate h3 {
+.row h3 {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.animate h4 {
+.row h4 {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.animate h5 {
+.row h5 {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.animate h6 {
+.row h6 {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.animate .line:first-child {
+.row .line:first-child {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.animate .line:nth-child(2) {
+.row .line:nth-child(2) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.animate .line:nth-child(3) {
+.row .line:nth-child(3) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-.animate .line:nth-child(4) {
+.row .line:nth-child(4) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.animate .line:nth-child(5) {
+.row .line:nth-child(5) {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-.animate .line:nth-child(6) {
+.row .line:nth-child(6) {
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-.animate .line:nth-child(7) {
+.row .line:nth-child(7) {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-.animate .line:nth-child(8) {
+.row .line:nth-child(8) {
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-.animate .line:nth-child(9) {
+.row .line:nth-child(9) {
   -webkit-animation-delay: 0.9s;
   -moz-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-.animate .line:nth-child(10) {
+.row .line:nth-child(10) {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-.animate p,
-.animate i,
-.animate a,
-.animate li,
-.animate input,
-.animate textarea,
-.animate button,
-.animate .video-thumb,
-.animate .item-group,
-.animate .g-recaptcha,
-.animate iframe,
-.animate address,
-.animate .faq-expand,
-.animate .border-right:after {
+.row p,
+.row i,
+.row a,
+.row li,
+.row input,
+.row textarea,
+.row button,
+.row .video-thumb,
+.row .item-group,
+.row .g-recaptcha,
+.row iframe,
+.row address,
+.row .faq-expand,
+.row .border-right:after {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-.animate img {
+.row img {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   animation-delay: 0.4s;
